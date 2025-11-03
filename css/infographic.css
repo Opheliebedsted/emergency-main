@@ -58,9 +58,9 @@
   transition: 1s;
 }
 
-#Layer_1 {
+/* #Layer_1 {
   border: 1px solid black;
-}
+} */
 
 .changeColor :first-child {
   fill: rgb(219, 19, 146) !important;
@@ -79,4 +79,25 @@
 
 .placeholder {
   font-size: small !important;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.buttons button {
+  background-color: #6f90eb;
+  color: white;
+  border: solid black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #3d4f83;
+  transform: scale(1.05);
 }
