@@ -40,3 +40,43 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+#fjollesyge_button:hover {
+  cursor: pointer;
+}
+#bidesyge_button:hover {
+  cursor: pointer;
+}
+#babysyge_button:hover {
+  cursor: pointer;
+}
+
+.my_scale {
+  transform: scale(1.2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+
+#Layer_1 {
+  border: 1px solid black;
+}
+
+.changeColor :first-child {
+  fill: rgb(219, 19, 146) !important;
+  transform: scale(1.2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+
+.my_scale2 {
+  transform: scale(1.2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+
+.placeholder {
+  font-size: small !important;
+}
