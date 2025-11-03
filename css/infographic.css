@@ -76,3 +76,7 @@
   transform-origin: 50% 50%;
   transition: 1s;
 }
+
+.placeholder {
+  font-size: small !important;
+}
