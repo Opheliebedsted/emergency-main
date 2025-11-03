@@ -55,6 +55,7 @@
   transform: scale(1.2);
   transform-box: fill-box;
   transform-origin: 50% 50%;
+  transition: 1s;
 }
 
 #Layer_1 {
@@ -62,5 +63,16 @@
 }
 
 .changeColor :first-child {
-  fill: red !important;
+  fill: rgb(219, 19, 146) !important;
+  transform: scale(1.2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+
+.my_scale2 {
+  transform: scale(1.2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: 1s;
 }
