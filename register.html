@@ -37,10 +37,43 @@
       <h1>INDBERET SMITTE</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Hvorfor er det vigtigt at indberette smitte?</h2>
+          <p>
+            Udfyld denne formular i tilfælde af smitte. Det er vigtigt at
+            indberette smitte, fordi det hjælper myndighederne med at opdage og
+            stoppe sygdomsudbrud i tide. Når læger og borgere rapporterer
+            tilfælde af smitsomme sygdomme, kan sundhedspersonale spore, hvor og
+            hvordan smitten spreder sig. Det gør det muligt at sætte ind med
+            forebyggelse, behandling og information hurtigt og dermed beskytte
+            både den enkelte og samfundet. Dine oplsyninger bliver behandlet
+            fortroligt.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <legend><b>Indberet smitte</b></legend>
+            <label for="Bidesyge">Bidesyge</label>
+          <input type="radio" id="Bidesyge" name="Bidesyge" />
+          <label for="Fjollesyge">Fjollesyge</label>
+          <input type="radio" id="Fjollesyge" name="Fjollesyge" />
+          <label for="Babysyge">Babysyge</label>
+          <input type="radio" id="Babysyge" name="Babysyge" />
+          </fieldset>
+          <label for="Fornavn">Fornavn</label>
+          <input type="text" id="Fornavn" name="Fornavn" />
+          <label for="Efternavn">Efternavn</label>
+          <input type="text" id="Efternavn" name="Efternavn" />
+          <label for="Alder">Alder</label>
+          <input type="text" id="Alder" name="Alder" />
+          <label for="Postnummer">Postnummer</label>
+          <input type="number" id="Postnummer" name="Postnummer" />
+          <label for="Dato-for-symptomer">Dato for symptomer</label>
+          <input
+            type="date"
+            id="Dato-for-symptomer"
+            name="Dato-for-symptomer"
+          />
+          <button type="submit">Indsend</button>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
