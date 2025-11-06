@@ -101,3 +101,18 @@
   background-color: #3d4f83;
   transform: scale(1.05);
 }
+#efficiency p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+}
+#requirement p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+}
+/* .info-box {
+  font-weight: bold;
+} */
