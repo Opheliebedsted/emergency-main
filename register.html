@@ -56,55 +56,72 @@
           <div class="form-group">
             <label for="Fornavn">Fornavn</label>
             <input type="text" id="Fornavn" name="Fornavn" required />
+            <p class="error-message" id="error">Udfyld</p>
           </div>
           <div class="form-group">
             <label for="Efternavn">Efternavn </label>
             <input type="text" id="Efternavn" name="Efternavn" required />
+            <p class="error-message" id="error">Udfyld</p>
           </div>
           <div class="form-group">
             <label for="Alder">Alder</label>
             <input type="number" id="Alder" name="Alder" required />
+            <p class="error-message" id="password-error">Udfyld</p>
           </div>
           <div class="form-group">
             <label for="Postnummer">Postnummer</label>
             <input type="number" id="Postnummer" name="Postnummer" required />
+            <p class="error-message" id="error">Udfyld</p>
           </div>
           <div class="form-group">
-            <label for="Dato-for-symptomer">Dato for symptomer </label>
+            <label for="DatoForSymptomer">Dato for symptomer </label>
             <input
               type="date"
-              id="Dato-for-symptomer"
-              name="Dato-for-symptomer"
+              id="DatoForSymptomer"
+              name="DatoForSymptomer"
               required
             />
+            <p class="error-message" id="error">Udfyld</p>
           </div>
           <fieldset>
             <legend>Hvad er du smittet med?</legend>
-
-            <label>
-              <input type="radio" name="Sygdom" value="Bidesyge" required />
-              Bidesyge
-            </label>
-
-            <label>
-              <input type="radio" name="Sygdom" value="Fjollesyge" />
-              Fjollesyge
-            </label>
-
-            <label>
-              <input type="radio" name="Sygdom" value="Babysyge" />
-              Babysyge
-            </label>
+            <div class="fieldset-group">
+              <label>
+                <input type="radio" name="Sygdom" value="Bidesyge" required />
+                Bidesyge
+              </label>
+            </div>
+            <div class="fieldset-group">
+              <label>
+                <input type="radio" name="Sygdom" value="Fjollesyge" required />
+                Fjollesyge
+              </label>
+            </div>
+            <div class="fieldset-group">
+              <label>
+                <input type="radio" name="Sygdom" value="Babysyge" required />
+                Babysyge
+              </label>
+              <p class="error-message" id="error">Udfyld</p>
+            </div>
           </fieldset>
           <button class="submit-button" type="submit">Indsend</button>
         </form>
       </section>
-      <!-- <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
+      <section id="form-summary">
+        <h2>Opsummering</h2>
+        <!-- <article>
           <p class="placeholder">Opsummering</p>
-        </article>
-      </section> -->
+        </article> -->
+        <div class="opsummering">
+          <p>Fornavn: <span class="first_name_output"></span></p>
+          <p>Efternavn: <span class="last_name_output"></span></p>
+          <p>Alder: <span class="age_output"></span></p>
+          <p>Postnummer: <span class="postnumber_output"></span></p>
+          <p>Dato for symptomer: <span class="date_output"></span></p>
+          <p>Hvad er du smittet med?: <span class="bacteria_output"></span></p>
+        </div>
+      </section>
     </main>
     <footer>
       <nav class="some">
@@ -132,6 +149,7 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/form.js"></script>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
