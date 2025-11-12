@@ -1,0 +1,85 @@
+.news_card button {
+  border: none;
+}
+
+.news_card button:hover {
+  cursor: pointer;
+}
+
+article [popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.31);
+}
+[popover] {
+  max-width: 50ch;
+  max-height: 90vh;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 5rem;
+}
+#popup p {
+  margin-block: 1rem;
+  line-height: 1.6;
+}
+
+/* details[open] div {
+  padding: 20px 0 0 0;
+}
+details[open] summary::after {
+  content: X;
+} */
+
+details {
+  outline: 2px solid #000;
+}
+
+summary {
+  background: #eee;
+  cursor: pointer;
+  padding: 1rem;
+}
+summary::marker {
+  content: none;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.symp {
+  padding-left: 1.5rem;
+}
+
+.btn h4 {
+  padding-left: 0.5rem;
+  margin-top: 20px;
+}
+
+.til-register {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(49, 83, 169);
+  font-weight: bold;
+}
+
+.til-register a:hover {
+  cursor: pointer;
+}
+
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+[open] summary::after {
+  content: "-";
+}
+.content {
+  padding: 1rem;
+}
+
+.btn p {
+  margin: 20px;
+}
