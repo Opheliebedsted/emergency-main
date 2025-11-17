@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -35,7 +36,7 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="svg" alt="ICON" class="llogo" />
+        <img src="svg/logo.svg" alt="ICON" class="llogo" />
         <div>
           <h1>Ny bakterie epidimi</h1>
           <p class="sub">Her kan du læse mere om om de forskellige bakterier</p>
@@ -53,7 +54,34 @@
               har du bare lyst til at blive klogere på bakterier, symptomer og
               behandling, så tryk på knappen forneden.
             </p>
-            <a href="instruction.html" class="cta_btn">Se mere her</a>
+            <details class="btn">
+              <summary>Se mere her</summary>
+              <h4>Bidesyge:</h4>
+              <ul class="symp">
+                <li>Muskelspændinger omkring kæben</li>
+                <li>Rastløshed</li>
+                <li>Let aggression</li>
+                <li>Trang til at bide folk</li>
+              </ul>
+              <h4>Fjollesyge:</h4>
+              <ul class="symp">
+                <li>Uforklarlig glædesrus</li>
+                <li>Fnisensanfald</li>
+                <li>Let overaktivitet</li>
+                <li>
+                  Alvorlige tilfælde: spontant behov for at danse eller lave
+                  mærkelige lyde
+                </li>
+              </ul>
+              <h4>Babysyge:</h4>
+              <ul class="symp">
+                <li>Forhøjet empati</li>
+                <li>Trang til at synge stille</li>
+                <li>Beskyttende adfærd</li>
+                <li>Trang til at sjæle babyer</li>
+                <li>Blød stemmeføring</li>
+              </ul>
+            </details>
           </div>
         </article>
         <article class="daily_card">
@@ -64,7 +92,29 @@
               I tilfælde af smitte er det vigtigt at indberette, så vi kan
               tracke og stoppe sygdomsudbrud.
             </p>
-            <a href="register.html" class="cta_btn">Indberet her</a>
+            <details class="btn">
+              <a href="register.html" class="til-register">
+                Gå til indberet smitte her
+              </a>
+              <summary>Indberet her</summary>
+              <p>
+                Udfyld denne formular, hvis du har mistanke om smitte. Det er
+                vigtigt at indberette tilfælde af sygdom, så myndighederne
+                hurtigt kan reagere og forhindre, at smitten spreder sig
+                yderligere. Når læger, borgere og institutioner indrapporterer
+                nye tilfælde, får sundhedspersonalet et overblik over, hvor og
+                hvordan smitten bevæger sig i samfundet. Disse oplysninger gør
+                det muligt at handle effektivt, for eksempel ved at iværksætte
+                målrettede tiltag, informere offentligheden og tilbyde den rette
+                behandling til dem, der er ramt. På den måde kan både
+                enkeltpersoner og fællesskabet beskyttes mod større udbrud. Alle
+                oplysninger, du deler i forbindelse med indberetningen, bliver
+                naturligvis behandlet fortroligt og anvendt udelukkende til at
+                sikre sundhed og forebyggelse. Din indsats er derfor med til at
+                gøre en reel forskel for alles sikkerhed.
+                <b>Dine personlige oplysninger behanldes fortroligt!</b>
+              </p>
+            </details>
           </div>
         </article>
       </section>
@@ -75,14 +125,69 @@
             Uheld i Laboratoriet Skabte Ny Epidemi: Assistent Spredte Ukendte
             Bakterier til EK!
           </p>
+          <div popover id="popup">
+            <h3>Epidemi startede på EK!</h3>
+            <p>
+              Et tilsyneladende harmløst laboratorieforsøg på et universitet
+              udviklede sig pludselig til en alvorlig situation, da tre nye
+              bakterier: Corynebacterium ludens, Pasteurella mordax og
+              Streptococcus infantilis, opstod ved en fejl. En
+              laboratorieassistent blev smittet og bragte uvidende bakterierne
+              med sig til EK, hvor de første symptomer hurtigt blev opdaget.
+              Forskerne mener, at en blanding af prøver under et eksperiment
+              udløste mutationen. Myndighederne arbejder nu tæt sammen med
+              forskerholdet for at spore smitten og forhindre yderligere
+              spredning. Situationen følges nøje, mens eleverne på EK opfordres
+              til at tage deres hygiejne alvorligt. De første tilfælde blev
+              opdaget, da flere elever viste usædvanlig adfærd fra ukontrolleret
+              latter og fjolleri til mærkelig trang til at bide i genstande og
+              ryste alt, der kunne larme. Skolens personale troede først, det
+              var en prank, men da symptomerne spredte sig, blev
+              sundhedsmyndighederne tilkaldt. Forskerne har siden bekræftet, at
+              de tre bakterier kan påvirke både humør og reflekser, hvilket gør
+              dem ekstremt uforudsigelige. Laboratoriet, hvor udbruddet
+              startede, er nu lukket for undersøgelser, og et særligt team
+              arbejder på at udvikle en vaccine. Indtil da anbefales grundig
+              håndvask og at undgå tæt kontakt med smittede.
+            </p>
+          </div>
           <img src="svg/scientest.png" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup" class="cta_btn" href="">
+            Læs mere
+          </button>
         </article>
         <article class="news_card">
           <h3>Jo flere prikker, jo stærkere trang</h3>
           <p>Ukontrollerbar trang til at gnave i alt med prikker.</p>
+          <div popover id="popup">
+            <h3>Jo flere prikker, jo stærkere trang</h3>
+            <p>
+              Et nyt symptom på den mystiske bidesyge har fået forskere til at
+              klø sig i håret. Smittede oplever en ukontrollerbar trang til at
+              bide i alt med prikker fra tøj og mønstrede tasker til prikkede
+              vægge og endda kager med glasurpletter. Jo flere prikker, desto
+              stærkere bliver trangen. Forskere mistænker, at bakterien
+              Pasteurella mordax påvirker hjernens belønningssystem, så prikker
+              fremkalder en følelse af uimodståelig nydelse. Myndighederne
+              advarer nu mod at bære prikket tøj i berørte områder, mens
+              forskere arbejder på at udvikle en behandling mod den usædvanlige
+              adfærd. Ifølge laboratorierapporter kan bakterien desuden ændre,
+              hvordan hjernen opfatter mønstre, så selv små prikker virker
+              overdrevent tiltrækkende. Flere smittede fortæller, at de føler en
+              “magnetisk” trang til at komme tæt på prikker nogle beskriver
+              endda, at de hører en svag summen, når de ser dem. Lærere på EK
+              har måttet fjerne prikkede genstande fra klasselokalerne, efter at
+              elever begyndte at gnave i blyanter, penalhuse og kaffekopper.
+              Eksperter frygter, at trangen kan forværres, hvis bakterien
+              muterer yderligere. Forskerholdet bag undersøgelsen understreger
+              dog, at symptomerne foreløbigt er ufarlige men særdeles besværlige
+              i hverdagen.
+            </p>
+          </div>
           <img src="svg/bidesyge.png" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup" class="cta_btn" href="">
+            Læs mere
+          </button>
         </article>
         <article class="news_card">
           <h3>Ny variation: Rangle-syndrom!</h3>
@@ -90,8 +195,37 @@
             Personen begynder pludselig at kommunikere ved at ryste ting, som om
             alt er en rangle f.eks. nøgler, penalhus, vandflaske.
           </p>
+          <div popover id="popup">
+            <h3>Ny variation: Rangle-syndrom!</h3>
+            <p>
+              Forskere har opdaget en ny og mærkelig variant af den såkaldte
+              babysyge. De smittede udvikler et fænomen kaldet Rangle-syndrom,
+              hvor de begynder at kommunikere ved at ryste ting, alt fra nøgler
+              og penalhuse til vandflasker, som om alt er en rangle. Lyden ser
+              ud til at give dem ro og glæde, men gør almindelig samtale næsten
+              umulig. Ifølge forskere skyldes syndromet sandsynligvis en
+              påvirkning af hjernens motoriske center, som får kroppen til at
+              forbinde lyd med kommunikation. Myndighederne anbefaler, at man
+              holder småting væk fra smittede for at undgå konstant raslen.
+              Flere tilfælde er allerede rapporteret på EK, hvor elever med
+              Rangle-syndrom skaber uro i klasselokalerne med konstant raslen.
+              Lærere fortæller, at kommunikationen er blevet udfordrende, da de
+              smittede ofte nægter at svare verbalt og i stedet reagerer med
+              rytmiske ryst. Forskere har observeret, at jo højere lyden fra
+              genstanden er, desto mere tilfredse virker de smittede. Nogle
+              begynder endda at “tale” i rytmer, som andre smittede forstår.
+              Eksperter frygter, at syndromet kan udvikle sig til kollektiv
+              “rangle-kommunikation”. Sundhedsmyndighederne tester nu
+              forskellige lydfrie omgivelser for at dæmpe symptomerne og
+              forhindre yderligere spredning af den usædvanlige adfærd.
+            </p>
+            <h4>Er du blevet smittet?</h4>
+            <a href="register.html">Indberet her</a>
+          </div>
           <img src="svg/rangle-syndrom.svg" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup" class="cta_btn" href="">
+            Læs mere
+          </button>
         </article>
       </section>
     </main>
