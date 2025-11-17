@@ -73,6 +73,7 @@
 } */
 
 /* DARK MODE */
+
 .darkmode {
   background-color: var(--color-link-bg);
   border-radius: 70px;
