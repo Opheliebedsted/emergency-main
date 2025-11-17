@@ -67,3 +67,55 @@
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #def5db;
 }
+
+/* h2 {
+  color: #fffae2 !important;
+} */
+
+/* DARK MODE */
+.darkmode {
+  background-color: var(--color-link-bg);
+  border-radius: 70px;
+  max-width: 8rem;
+  margin: 1.5rem;
+  font-size: var(--followup-text-size);
+  border: none;
+}
+.darkmode:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+html {
+  color-scheme: light;
+  --color-bg: light-dark (#bbc9b3, #121212);
+  --color-text: light-dark (#000, #99fbb6);
+  /* --color-heading: light-dark (#fefefe, #2483);
+  color: var(--color-text); */
+  background-color: var(--color-bg);
+  --color-head-bg: light-dark(#6f7e68, #364131);
+  --color-menu-bg: light-dark(#6f90eb, #787878);
+  --color-card-bg: light-dark(#fff, #787878);
+  --color-link-bg: light-dark (#fffae2, #000);
+  --color-news-bg: light-dark(#fffae2, #787878);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #8f8f8f);
+  --color-info-bg: light-dark(#fff, #8f8f8f);
+  --color-infobox-1-bg: light-dark(#fceb94, #494343);
+  --color-infobox-2-bg: light-dark(#def5db, #333030);
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-bg: #121212;
+  --color-text: #99fbb6;
+  /* --color-heading: #2483; */
+  --color-head-bg: #364131;
+  --color-menu-bg: #787878;
+  --color-card-bg: #787878;
+  --color-link-bg: #000;
+  --color-news-bg: #787878;
+  --color-news-bg-inverted: #8f8f8f;
+  --color-info-bg: #8f8f8f;
+  --color-infobox-1-bg: #494343;
+  --color-infobox-2-bg: #333030;
+}

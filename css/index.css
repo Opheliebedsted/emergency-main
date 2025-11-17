@@ -35,7 +35,7 @@ details {
 }
 
 summary {
-  background: #eee;
+  background: var(--color-infobox-2-bg);
   cursor: pointer;
   padding: 1rem;
 }
